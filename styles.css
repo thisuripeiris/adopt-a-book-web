@@ -1,5 +1,4 @@
 *{
-    background-color: rgb(243, 247, 252);
     color: #092C4C;
     font-family: 'Poppins', sans-serif;
 }
@@ -13,186 +12,179 @@ body .container{
     width: 100%; 
     max-width: 100%; 
     box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-}
-.head{
-    text-align: center;
+    padding: 0;
 }
 body .container h1{
-    font-size: 3.5rem;
     font-weight: 600;
 }
 body .container p{
-    font-size: 1.2rem;
     padding-top: 1%;
+    font-family: 'Rubik', sans-serif;
 }
 
+
 /* navbar */
-.nav-link{
-    font-size: 1.1rem;       
+nav .nav-link{
+    font-size: 1rem;  
+    color: gray;    
 }
 
 /* title */
-#title .image-container{
+.title{
     display: flex;
+    flex-direction: row;
+}
+.poster{
     position: relative;
-    padding-top: 1%;
+    overflow: hidden;
+    margin: 0% 5% 0%;
 }
-#title .image-container .img-fluid{
-    height: 700px;
+.title .image-container{
+    width: 70%;
+    margin-top: 7%;
+    margin-left: 2%;
 }
-/* #title .hobbitImg{
-    height: 70px;
-    width: 200px;
-    border-radius: 30px;
+.title .title-content{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: absolute;
-    display: block;
-    top: 27%;
-    left: 25%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
-    transform: translate(-50%, -50%);
+    left: 60%;
+    top: 12%;
+
 }
-#title .scanImg{
-    height: 70px;
-    width: 200px;
-    border-radius: 30px;
+.poster-image{
     position: absolute;
-    top: 62%;
-    left: 27%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
-    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    top: -100%;
+    left: -10%;
+    z-index: -1;
 }
-#title .check-img{
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
-    position: absolute;
-    top: 24%;
-    right: 25%;
-    transform: translate(-50%, -50%);   
+.title .head{
+    text-align: left;
 }
-#title .nav-img{
-    width: 210px;
-    height: 60px;
-    border-radius: 25px;
-    position: absolute;
-    top: 80%;
-    right: 12%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
-    transform: translate(-50%, -50%);
-} */
+.title h1{
+    
+    font-size: 4.5rem;
+}
+.title p{
+    font-weight: normal;
+    font-size: 1.3rem;
+}
 
 /* download button */
 .download-btn{
     display: flex;
+    gap: 2%;
     justify-content: center; 
     align-items: center;
     padding-top: 2%;
 }
+.download-btn .btn{
+    padding-left: 0%;
+}
+.download-btn .btn img{
+    height: 9vh;
+}
 
-/* why */
-#why{
-    margin-top: 5%;
+/* features */
+#features{
+    margin: 0%;
 }
-#why .why-title{
-    display: flex;
-    flex-direction: row-reverse;
+#features .container{
+    padding: 0%;
 }
-#why .image-container img{
-    height: 50vh;
-}
-#why .container .head{
-    display: flex;
+#features .ftr{
     justify-content: center;
     align-items: center;
-    text-align: left;
-}
-#why .why-body{
     display: flex;
-    justify-content: space-around;
+    gap: 5%;
+    padding: 0%;
+    height: 90vh;
 }
-#why .flex-container{
+#features .ftr-img-l{
+    flex-direction: row-reverse;
+    background-color: #cadee3;      /* here */
+}
+#features .ftr .text-content{
+    width: 30%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 2% 0 0 10%;
-    width: 70%;    
+    flex-direction: column;
 }
-#why .flex-container .flex-item{
-    flex: 1 0 calc(50% - 10px); 
-    margin: 5px;
-    padding: 20 20 20 0px;
-    box-sizing: border-box;
+#features .ftr .image-content{
+    background-color: transparent;
 }
-.flex-container .icon{
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
-    padding-bottom: 5%;
+#features h1{
+    font-size: 4rem;
 }
-.flex-container img{
-    height: 10vh;
-    border-radius: 50%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
-    transition: 0.4s;
+#features p{
+    font-size: 1.3rem;
 }
-.flex-container img:hover{
-    transform: scale(1.1);
-    z-index: 1;
-}
-.flex-container .topic h3{
-    font-size: 1.5rem;
-}
-.flex-container .para{
-    width: 70%;
-}
-.flex-container .para p{
-    line-height: 20px;
+#features .subP{
     font-size: 1rem;
     color: gray;
+}
+#features img{
+    height: 80vh;
+    object-fit: cover;
+}
+#features .ftr-img-l img,
+#features .ftr-img-l h1,
+#features .ftr-img-l p,
+#features .ftr-img-l .text-content{
+    background-color: #cadee3;          /*here*/
 }
 
 /* testimonials */
 #testimonials{
-    margin: 5% 0;
+    margin: 0% 5% 0%;
 }
 #testimonials .container{
+    height: 100%;
     width: 80%;
-    height: 40vh;
 }
-#testimonials .slide .container .carousel-inner{
-    display: flex;
+#testimonials h1{
+    font-size: 3rem;
 }
-#testimonials .feedback{
+#testimonials .head p{
+    font-size: 1.3rem;
+}
+#testimonials .carousel  .carousel-inner{
     display: flex;
+    height: 45vh;
+}
+#testimonials .carousel  .carousel-item{
+    height: 100%;
+}
+#testimonials  .feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
 }
 #testimonials .feedback-content{
+    width: 50%;
     display: flex;
     gap: 10px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2% 2%;
+}
+#testimonials .profile-pic {
+    padding: 2% 0%;
+  }
+#testimonials .profile-pic img{
+    height: 30vh;
+    border-radius: 50%;
 }
 #testimonials .feedback-content .fa-quote-left{
     color: #566370;
     font-size: 2rem;
     align-self: flex-start;
-}
-#testimonials .feedback-content p{
-    color: rgb(70, 69, 69);
-    font-size: 1.2rem;
-    width: 90%;
-}
-#testimonials .profile-pic:first-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 1%;
-}
-#testimonials .profile-pic img{
-    height: 30vh;
-    border-radius: 50%;
 }
 #testimonials .control-icon{
     height: 46px;
@@ -205,224 +197,210 @@ body .container p{
     border-radius: 50%;
     top: 35%;
 }
-#testimonials .feedback-content .name{
-    display: flex;
-    align-self: flex-start;
+#testimonials .feedback-content p{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 #testimonials h6{
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #264a6c;   
+    font-size: 1rem; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
-/* download/contact */
+
+/* download */
 #download{
-    margin-top: 7%;
-    margin-bottom: 1%;
+    margin: 0% 0% 3%;
 }
 #download .container{
+    /* background-color: #cadee3; */
     display: flex;
-    flex-direction: row;
-    margin-top: 2%;
-    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#download .image-container img{
-    height: 500px;
+#download h1{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 800;
+    font-family: 'Karla', sans-serif;
 }
-#download .head{
-    text-align: left;
-}
-#download .content{
-    width: 50%;
-}
-#download .content .para p{
-    font-size: 1rem;
-    font-weight:500;
+#download p{
+    font-size: 1.1rem;
     color: gray;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
 }
-#download .download-btn{
-    gap: 15px;
-    align-items: left;
-    justify-content: left;
-    padding-top: 0;
-    padding-bottom: 3%;
-}
-#download .download-btn .btn{
-    padding-left: 0;
-}
-#download .navigation{
-    margin-top: 5%;
-}
-#download  .navbar-nav{
+#download .dwnld-txt{
+    width: 60%;
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
-#download .nav-item{
-    display: flex;    
+#download .download-btn .btn img{
+    height: 10vh;
 }
-/* #download .nav-item:not(:last-child)::after {
-    content: "|";
-    margin: 10 5px;
-    color: gray;
-} */
 
-#download .nav-link{
-    font-size: 1rem; 
-    font-weight: 400;
-    color: gray; 
-}
-#download .nav-link:hover{
-    color: #092C4C;
-}
-#download .cpy{
+
+/* footer */
+footer .footer-content{
     display: flex;
-    gap: 30px;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
 }
-#download .cpy p{
+footer .cpy p{
     font-size: 0.8rem;
     font-weight: 300;
     color: gray;
 }
-#download .social-media{
+footer .cpy a{
+    font-weight: 600;
+    color: #092C4C;
+    font-size: 1.2rem;
+}
+footer .social-media{
     display: flex;
     gap: 30px;
+    margin: 0%;
+    align-items: baseline;
 }
-#download .social-media i{
-    font-size: 22px;
+footer .social-media i{
+    font-size: 25px;
     color: #475D6F;
 }
-#download .social-media i:hover{
+footer .social-media i:hover{
     color: #092C4C;
 }
-#download .image-container{
-    position: relative;
+footer .social-media a{
+    color: #1b3f62;
+    font-weight: 500;
 }
-#download .image-container img{
-    height: 500px;
-    position: absolute;
-    bottom: 0;
+footer .design a{
+    color: #152433;
+    font-weight: 500;
+    font-size: 1rem;
 }
-
-
-
-
-
-
-
+footer .design p{
+    font-size: 0.9rem;
+}
 
 
 
 
 
 /* RESPONSIVE DESIGN */
-/* mobile phone */
+/* mobile phone #cadee3*/
+
 @media only screen and (min-width: 320px) {
-    body .container h1{
-        font-size: 2rem;
-    }
-    body .container p{
+    /* navbar */
+    nav .navbar-toggler{
         font-size: 0.8rem;
     }
-
-    /* navbar */
-    .nav-link{
-        font-size: 0.8rem;       
+    nav .nav-link{
+        font-size: 0.7rem;       
     }
     .navbar-brand img{
         height: 4vh;
     }
-    
-    /* title */
-    #title{
-        margin-top: 3%;
-    }
-    #title .image-container .img-fluid{
-        max-width: 100%;
-        height: 250px;
-    }
-    /* #title .hobbitImg{
-        height: 45px;
-        width: 100px;
-        top: 20%;
-        left: 15%;
-    }
-    #title .scanImg{
-        height: 45px;
-        width: 100px;
-        top: 70%;
-        left: 20%;
-    }
-    #title .check-img{
-        height: 40px;
-        width: 40px;
-        right: 5%; 
-    }
-    #title .nav-img{
-        width: 100px;
-        height: 40px;
-        left: 85%;
-    } */
 
+    /* title */
+    .title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title h1{
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 0.9rem;
+    }
+    .title .image-container{
+        display: flex;
+        width: 100%;
+        margin-top: 12%;
+        margin-left: 5%;
+    }
+    .title .title-content{
+        position: relative;
+        width: 80%;
+        align-items: center;
+        left: 0%;
+        bottom: 0%;
+    
+    }
+    .poster-image{
+        height: auto;
+        width: auto;
+        top: -225%;
+        left: -200%;
+    }
     /* download button */
     .download-btn{
-        gap: 5%;
+        gap: 1%;
     }
     .download-btn .btn{
-        padding: 0;
+        padding-left: 2%;
     }
     .download-btn .btn img{
-        height: 5.5vh;
-        margin-top: 10%;
-    }
+        height: 6vh;
+    } 
 
-    /* why */
-    #why{
-        margin-top: 10%;
-    }
-    #why .why-title{
+    /* features */
+    #features .ftr{
         flex-direction: column;
+        gap: 3%;
+        height: 100vh;
     }
-    #why .image-container{
-        margin: 7% 0;
+    #features .ftr .text-content{
+        width: 80%;
+        margin-bottom:5%;
     }
-    #why .image-container img{
-        height: auto;
+    #features h1{
+        font-size: 2rem;
     }
-    #why .container .head{
-        text-align: center;
-    }
-    #why .flex-container{
-        margin: 0%; 
-        text-align: center;  
-    }
-    .flex-container .icon{
-        justify-content: center;
-        padding-left: 0%;
-    }
-    .flex-container img{
-        height: 8vh;   
-    }
-    .flex-container .topic h3{
-        font-size: 1.3rem;
-    }
-    .flex-container .para{
-        width: 100%;
-    }
-    .flex-container .para p{
+    #features p{
         font-size: 0.8rem;
+    }
+    #features .subP{
+        font-size: 0.8rem;
+    }
+    #features img{
+        height: 60vh;
     }
 
     /* testimonials */
-    #testimonials .container{
-        width: 100%;
-        height: 50vh;
+    #testimonials h1{
+        font-size: 1.5rem;
     }
-    #testimonials .feedback{
+    #testimonials .head p{
+        font-size: 0.8rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 60vh;
+    }
+    #testimonials  .feedback{
         flex-direction: column;
     }
+    #testimonials .control-icon{
+        height: 30px;
+        width: 30px;
+        font-size: 0.3rem;
+        top: 15%;
+    }
     #testimonials .feedback-content{
-        gap: 0px;
+        width: 90%;
+    }
+    #testimonials .feedback-content p{
+        font-size: 0.8rem;
+        width: 100%; 
     }
     #testimonials .feedback-content .fa-quote-left{
         font-size: 1.5rem;
@@ -430,282 +408,305 @@ body .container p{
     #testimonials .profile-pic img{
         height: 20vh;
     }
-    #testimonials .control-icon{
-        height: 30px;
-        width: 30px;
-        font-size: 0.5rem;
-        top: 15%;
-    }
-    #testimonials .feedback-content p{
-        font-size: 0.7rem;
-        width: 100%;  
-    }
-    #testimonials h6{
-        font-size: 1rem;  
-    }
 
-    /* download/contact */
-    #download{
-        margin-top: 40%;
-    }
-    #download .container{
-        flex-direction: column;
-        width: 100%;
-    }
-    #download .image-container img{
-        /* height: 200px;
-        position: relative; */
-        display: none;
-    }
-    #download .head{
-        text-align: center;
-    }
-    #download .content{
-        width: 100%;
-    }
-    #download .content .para p{
-        font-size: 0.7rem;
-        margin: 2% 0 0;
-    }
-    #download .download-btn .btn img{
-        height: 5vh;
-    }
-    #download .navigation{
-        margin-top: 0%;
-    }
-    #download  .navbar-nav{
-        gap: 10px;
-    }
-    #download hr{
-        margin: 0;
-    }
-    #download .nav-link{
-        font-size: 0.7rem; 
-    }
-    #download .cpy p{
-        font-size: 0.6rem;
-    }
-    #download .social-media{
-        gap: 20px;
-    }
-    #download .social-media i{
-        font-size: 15px;
-    }
-    
-    
-}
-
-
-
-
-/* tab */
-@media only screen and (min-width: 780px){
-    body .container h1{
-        font-size: 3rem;
-    }
-    body .container p{
-        font-size: 1rem;
-    }
-
-    /* navbar */
-    .nav-link{
-        font-size: 1rem;       
-    }
-    .navbar-brand img{
-        height: 5vh;
-    }
-    
-    /* title */
-    #title .image-container .img-fluid{
-        height: 500px;
-    }
-    /* #title .hobbitImg{
-        height: 70px;
-        width: 200px;
-        top: 20%;
-        left: 15%;
-    }
-    #title .scanImg{
-        height: 70px;
-        width: 200px;
-        top: 70%;
-        left: 20%;
-    }
-    #title .check-img{
-        height: 70px;
-        width: 70px;
-        right: 14%; 
-    }
-    #title .nav-img{
-        width: 210px;
-        height: 60px;
-        left: 85%;
-    } */
-
-    /* download button */
-    .download-btn{
-        gap: 0%;
-    }
-    .download-btn .btn .play-store{
-        padding-left: 10%;
-    }
-    .download-btn .btn img{
-        height: 8vh;
-        margin-top: 10%;
-    }
-
-    /* why */
-    #why .image-container img{
-        height: 60vh;
-    }
-    #why .flex-container{
-        width: 80%;    
-    }
-    .flex-container img{
-        height: 10vh;   
-    }
-
-    /* testimonials */
-    #testimonials .container{
+    /* download */
+    #download .dwnld-txt{
         width: 80%;
-        height: 35vh;
     }
-    #testimonials .feedback{
-        flex-direction: row;
+    #download h1{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
     }
-    #testimonials .feedback-content{
-        gap: 5px;
-    }
-    #testimonials .profile-pic img{
-        height: 25vh;
-    }
-    #testimonials .control-icon{
-        height: 40px;
-        width: 40px;
-        top: 25%;
-    }
-    #testimonials .feedback-content p{
-        font-size: 0.8rem;
-    }
-
-    /* download/contact */
-    #download{
-        margin-top: 15%;
-    }
-    #download .container{
-        flex-direction: row;
-        width: 90%;
-    }
-    #download .image-container img{
-        display: block;
-        height: 300px;
-    }
-    #download .head{
-        text-align: left;
-    }
-    #download .content{
-        width: 50%;
-    }
-    #download .nav-link{
-        font-size: 0.8rem; 
-    }
-    #download .cpy p{
+    #download p{
         font-size: 0.7rem;
-    }
-    #download .social-media{
-        gap: 15px;
-    }
-    #download .social-media i{
-        font-size: 17px;
-    }
-    #download .download-btn{
-        gap: 0;
+        font-weight: 600;
+        letter-spacing: 2px;
     }
     #download .download-btn .btn img{
         height: 6vh;
     }
+
+    /* footer */
+    footer .footer-content{
+        flex-direction: column;
+    }
+    footer .social-media{
+        width: 80%;
+        gap: 0%;
+        justify-content: space-around;
+    }
+    footer .social-media i{
+        font-size: 1.2rem;
+    }
+    footer .cpy a{
+        font-size: 1.1rem;
+    }
+    footer .cpy p{
+        font-size: 0.8rem;
+        margin-bottom: 1%;
+    }
+    footer .social-media a{
+        font-size: 0.8rem;
+    }
+    footer .social-media p{
+        margin-bottom: 0;
+    }
+    footer .design a{
+        font-size: 0.8rem;
+    }
+    footer .design p{
+        font-size: 0.9rem;
+    }
 }
 
 
-
-
-/* desktop */
-@media only screen and (min-width: 1280px) {
-    body .container h1{
-        font-size: 4.5rem;
-    }
-    body .container p{
-        font-size: 1.5rem;
-    }
-
+/* tab */
+@media only screen and (min-width: 780px){
     /* navbar */
-    .nav-link{
-        font-size: 1.4rem;       
+    nav .navbar-toggler{
+        font-size: 1rem;
+    }
+    nav .nav-link{
+        font-size: 0.9rem;       
     }
     .navbar-brand img{
         height: 5vh;
     }
-    
     /* title */
-    #title .image-container .img-fluid{
-        height: 700px;
+    .title{
+        flex-direction: row;
     }
-    /* #title .hobbitImg{
-        height: 85px;
-        width: 250px;
-        top: 20%;
-        left: 20%;
+    .title h1{
+        font-size: 3rem;
     }
-    #title .scanImg{
-        height: 85px;
-        width: 250px;
-        top: 70%;
-        left: 25%;
+    .title p{
+        font-size: 0.9rem;
     }
-    #title .check-img{
-        height: 90px;
-        width: 90px;
-        right: 20%; 
+    .title .image-container{
+        margin-top: 10%;
+        margin-left: 2%;
     }
-    #title .nav-img{
-        width: 260px;
-        height: 80px;
-        left: 77%;
-    } */
+    .title .title-content{
+        width: 40%;
+        align-self: normal;
+        align-items: flex-start;
+        left: -5%;
+    
+    }
+    .poster-image{
+        top: -230%;
+        left: -80%;
+    }
+    /* download button */
+    .download-btn{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .download-btn .btn img{
+        height: 7vh;
+    } 
 
-    /* why */
-    #why{
-        margin-top: 3%;
+
+    /* features */
+    #features .ftr{
+        height: 120vh;
+        align-self: center;
     }
-    #why .image-container{
-        margin: 3%;
+    #features .ftr .text-content{
+        width: 50%;
+        margin-bottom: 3%;
     }
-    #why .flex-container{
-        width: 100%; 
-        padding: 0 6%;   
+    #features h1{
+        font-size: 3rem;
+        line-height: 2.7rem;
     }
-    .flex-container .topic h3{
-        font-size: 2.5rem;
+    #features p{
+        font-size: 1rem;
     }
-    .flex-container .para{
-       padding: 0 3% 3%;
+    #features .subP{
+        font-size: 0.8rem;
     }
-    .flex-container .para p{
-        line-height: 30px;
-        font-size: 1.4rem;
+    #features img{
+        height: 75vh;
     }
+
 
     /* testimonials */
     #testimonials .container{
-        height: 35vh;
+        width: 90%;
+    }
+    #testimonials h1{
+        font-size: 2rem;
+    }
+    #testimonials .head p{
+        font-size: 1rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 40vh;
+    }
+    #testimonials .control-icon{
+        height: 40px;
+        width: 40px;
+        top: 35%;
+    }
+    #testimonials .feedback-content{
+        width: 60%;
+    }
+    #testimonials  .feedback{
+        flex-direction: row;
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 2rem;
+    }
+    #testimonials .feedback-content p{
+        font-size: 0.9rem;
+    }
+    #testimonials h6{
+        font-size: 1.2rem; 
     }
     #testimonials .profile-pic img{
-        height: 25vh;
+        height: 23vh;
+    }
+
+
+    /* download */
+    #download .dwnld-txt{
+        width: 90%;
+    }
+    #download h1{
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    #download p{
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+    #download .download-btn{
+        flex-direction: row;
+    }
+    #download .download-btn .btn img{
+        height: 8vh;
+    }
+
+    /* footer */
+    footer{
+        margin: 0% 0% 3%;
+    }
+    footer .footer-content{
+        flex-direction: row;
+        gap: 0%;
+    }
+    footer .social-media{
+        width: 40%;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .social-media i{
+        font-size: 1.3rem;
+    }
+    footer .social-media p{
+        margin-bottom: 2%;
+    }
+    footer .cpy a{
+        font-size: 1.2rem;
+    }
+    .footer-content p{
+        font-size: 1rem;
+    }
+    footer .design a{
+        font-size: 1rem;
+    }
+    footer .design p{
+        font-size: 0.9rem;
+        margin-bottom: 0%;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+    /* navbar */
+    nav .navbar-toggler{
+        font-size: 2rem;
+    }
+    nav .nav-link{
+        font-size: 1rem;       
+    }
+    .navbar-brand img{
+        height: 6vh;
+    }
+
+    /* title */
+    .title h1{
+        font-size: 4rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+    }
+    .title .image-container{
+        margin-top: 6%;
+    }
+    .poster-image{
+        top: -120%;
+        left: -20%;
+    }
+    /* download button */
+    .download-btn .btn img{
+        height: 8vh;
+        margin-top: 5%;
+    }
+
+
+    /* features */
+    #features .container{
+        justify-content: center;
+        align-items: center;
+    }
+    #features .ftr{
+        height: 90vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        gap: 3%;
+    }
+    #features .ftr-img-l{
+        flex-direction: row-reverse;
+    }
+    #features .ftr .text-content{
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    #features h1{
+        font-size: 3.3rem;
+        line-height: 3rem;
+    }
+    #features p{
+        font-size: 1.3rem;
+    }
+    #features .subP{
+        font-size: 1.1rem;
+    }
+
+
+    /* testimonials */
+    #testimonials .container{
+        width: 80%;
+    }
+    #testimonials h1{
+        font-size: 3rem;
+    }
+    #testimonials .head p{
+        font-size: 1.2rem;
     }
     #testimonials .control-icon{
         height: 50px;
         width: 50px;
-        top: 25%;
+        top: 30%;
+    }
+    #testimonials .feedback-content{
+        width: 50%;
     }
     #testimonials .feedback-content .fa-quote-left{
         font-size: 2.1rem;
@@ -716,110 +717,135 @@ body .container p{
     #testimonials h6{
         font-size: 1.5rem; 
     }
-
-    /* download/contact */
-    #download .image-container img{
-        height: 500px;
+    #testimonials .profile-pic img{
+        height: 30vh;
     }
-    #download .content .para p{
+
+    /* download */
+    #download .dwnld-txt{
+        width: 60%;
+    }
+    #download h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    #download p{
         font-size: 1.2rem;
+        font-weight: 600;
     }
     #download .download-btn .btn img{
-        height: 7vh;
+        height: 9vh;
     }
-    #download .nav-link{
-        font-size: 1.2rem; 
+
+
+    /* footer */
+    footer{
+        margin: 0% 0% 2%;
     }
-    #download .cpy p{
+    footer .footer-content{
+        gap: 8%;
+    }
+    footer .social-media i{
+        font-size: 1.5rem;
+    }
+    footer .social-media a{
+        font-size: 1rem;
+    }
+    footer .cpy a{
+        font-size: 1.3rem;
+    }
+    footer .cpy p{
+        font-size: 1rem;
+    }
+    .footer-content p{
+        font-size: 1.3rem;
+    }
+    footer .design a{
+        font-size: 1.2rem;
+    }
+    footer .design p{
         font-size: 1.1rem;
-    }
-    #download  .navbar-nav{
-        gap: 20px;
-    }
-    #download .social-media i{
-        font-size: 25px;
     }
 }
 
-
 @media only screen and (min-width: 1440px){
-    body .container h1{
-        font-size: 3.8rem;
-    }
-    body .container p{
-        font-size: 1.2rem;
-    }
     /* navbar */
-    .nav-link{
+    nav .nav-link{
         font-size: 1.1rem;       
     }
     .navbar-brand img{
-        height: auto;
+        height: 6.5vh;
     }
-        
+
     /* title */
-    #title .image-container .img-fluid{
-            height: 700px;
+    .title h1{
+        font-size: 4.7rem;
     }
-    
-    /* why */
-    #why{
+    .title p{
+        font-size: 1.3rem;
+    }
+    .title .image-container{
         margin-top: 5%;
     }
-    #why .why-title{
-        flex-direction: row-reverse;
+    .poster-image{
+        top: -110%;
+        left: -10%;
     }
-    #why .image-container{
-        margin: 0%;
+    /* download button */
+    .download-btn{
+        flex-direction: row;
     }
-    #why .image-container img{
-        height: 60vh;
+
+
+    /* features */
+    #features h1{
+        font-size: 3.8rem;
+        line-height: 3.5rem;
     }
-    #why .container .head{
-        text-align: left;
-        margin-right: 5%;
+    #features p{
+        font-size: 1.4rem;
     }
-    #why .flex-container{
-        text-align: left; 
-        margin-top: 2%;
-        margin-left: 10%;  
-    }
-    .flex-container .icon{
-        justify-content: left;
-        padding-left: 10%;
-    }
-    .flex-container .topic h3{
-        font-size: 1.7rem;
-    }
-    .flex-container .para{
-        width: 80%;
-        padding-left: 0%;
-        margin-right: 0%;
-    }
-    .flex-container .para p{
-        line-height: 20px;
-        font-size: 1rem;
+    #features .subP{
+        font-size: 1.2rem;
     }
 
     /* testimonials */
-    #testimonials .container{
-        height: 40vh;
+    #testimonials h1{
+        font-size: 3.5rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 45vh;
+    }
+    #testimonials .control-icon{
+        height: 46px;
+        width: 46px;
+        top: 35%;
+    }
+    #testimonials .feedback-content p{
+        font-size: 1.3rem;
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 2.2rem;
+    }
+    #testimonials h6{
+        font-size: 1.7rem; 
     }
 
-    /* download/contact */
-    #download{
-        margin-top: 10%;
+    /* download*/
+    #download h1{
+        font-size: 3.2rem;
+        line-height: 4rem;
     }
-    #download .content .para p{
-        font-size: 1rem;
+
+
+    /* footer */
+    footer{
+        margin: 0% 0% 1%;
     }
-    #download .navigation{
-        margin-top: 2%;
+    footer .social-media a{
+        font-size: 1.2rem;
     }
-    #download .nav-link{
-        font-size: 1rem; 
-    }
-    #download .cpy p{
-        font-size: 0.9rem;
+    footer .cpy a{
+        font-size: 1.5rem;
     }
 }
