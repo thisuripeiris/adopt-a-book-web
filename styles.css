@@ -46,7 +46,7 @@ nav .nav-link{
 }
 .title .title-content{
     display: flex;
-    width: 30%;
+    /* width: 30%; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -98,6 +98,7 @@ nav .nav-link{
 }
 #features .container{
     padding: 0%;
+    /* margin: 10% 0%; */
 }
 #features .ftr{
     justify-content: center;
@@ -211,7 +212,7 @@ nav .nav-link{
 
 /* download */
 #download{
-    margin: 0% 0% 3%;
+    margin: 5% 0% 3%;
 }
 #download .container{
     /* background-color: #cadee3; */
@@ -283,7 +284,7 @@ footer .social-media a{
     font-weight: 500;
 }
 footer .design a{
-    color: #152433;
+    color: gray;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -296,7 +297,7 @@ footer .design p{
 
 
 /* RESPONSIVE DESIGN */
-/* mobile phone #cadee3*/
+/* mobile phone */
 
 @media only screen and (min-width: 320px) {
     /* navbar */
@@ -316,6 +317,9 @@ footer .design p{
         justify-content: center;
         align-items: center;
     }
+    /* .poster{
+        margin-top: 12%;
+    } */
     .title h1{
         font-size: 2.5rem;
     }
@@ -339,7 +343,7 @@ footer .design p{
     .poster-image{
         height: auto;
         width: auto;
-        top: -225%;
+        top: -200%;
         left: -200%;
     }
     /* download button */
@@ -356,12 +360,12 @@ footer .design p{
     /* features */
     #features .ftr{
         flex-direction: column;
-        gap: 3%;
-        height: 100vh;
+        height: 135vh;
     }
     #features .ftr .text-content{
+        padding: 2%;
         width: 80%;
-        margin-bottom:5%;
+        margin:2%;
     }
     #features h1{
         font-size: 2rem;
@@ -439,7 +443,7 @@ footer .design p{
         font-size: 1.2rem;
     }
     footer .cpy a{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     footer .cpy p{
         font-size: 0.8rem;
@@ -459,7 +463,12 @@ footer .design p{
     }
 }
 
-
+/* @media only screen and (min-width: 768px){
+    .poster-image{
+        top: -100%;
+        left: -100%;
+    }
+} */
 /* tab */
 @media only screen and (min-width: 780px){
     /* navbar */
@@ -483,7 +492,7 @@ footer .design p{
         font-size: 0.9rem;
     }
     .title .image-container{
-        margin-top: 10%;
+        margin-top: 0%;
         margin-left: 2%;
     }
     .title .title-content{
@@ -491,10 +500,13 @@ footer .design p{
         align-self: normal;
         align-items: flex-start;
         left: -5%;
+        /* top: 50%; */
+        margin-top: 5%;
+        padding: 5% 0;
     
     }
     .poster-image{
-        top: -230%;
+        top: -190%;
         left: -80%;
     }
     /* download button */
@@ -508,13 +520,20 @@ footer .design p{
 
 
     /* features */
+    #features .container{
+        padding: 0%;
+        /* margin: 5% 0 15% ; */
+    }
     #features .ftr{
-        height: 120vh;
+        height: 160vh;
         align-self: center;
     }
     #features .ftr .text-content{
         width: 50%;
         margin-bottom: 3%;
+    }
+    #features .ftr-img-l{
+        height: 175vh;
     }
     #features h1{
         font-size: 3rem;
@@ -631,7 +650,7 @@ footer .design p{
         font-size: 2rem;
     }
     nav .nav-link{
-        font-size: 1rem;       
+        font-size: 1.2rem;       
     }
     .navbar-brand img{
         height: 6vh;
@@ -648,7 +667,7 @@ footer .design p{
         margin-top: 6%;
     }
     .poster-image{
-        top: -120%;
+        top: -100%;
         left: -20%;
     }
     /* download button */
@@ -664,7 +683,7 @@ footer .design p{
         align-items: center;
     }
     #features .ftr{
-        height: 90vh;
+        height: 110vh;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -722,6 +741,9 @@ footer .design p{
     }
 
     /* download */
+    #download{
+        margin: 2% 0% 3%;
+    }
     #download .dwnld-txt{
         width: 60%;
     }
@@ -771,7 +793,7 @@ footer .design p{
 @media only screen and (min-width: 1440px){
     /* navbar */
     nav .nav-link{
-        font-size: 1.1rem;       
+        font-size: 1.2rem;       
     }
     .navbar-brand img{
         height: 6.5vh;
@@ -788,7 +810,7 @@ footer .design p{
         margin-top: 5%;
     }
     .poster-image{
-        top: -110%;
+        top: -120%;
         left: -10%;
     }
     /* download button */
@@ -798,12 +820,15 @@ footer .design p{
 
 
     /* features */
+    /* #features .ftr{
+        height: 100vh;
+    } */
     #features h1{
         font-size: 3.8rem;
         line-height: 3.5rem;
     }
     #features p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     #features .subP{
         font-size: 1.2rem;
